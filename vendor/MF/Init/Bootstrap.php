@@ -29,7 +29,6 @@
     }
 
     protected function run($url){
-      echo "--".$url."--";
       foreach ($this->getRoutes() as $key => $route){
         if ($url == $route['route']){
           $class = "App\\Controllers\\" . ucfirst($route['controller']);
